@@ -6,7 +6,7 @@
 
 <title>Hanley Pest Control | Worcester Pest Control Specialists</title>
 
-<meta name="description" content="Professional pest control services across Worcester, Worcestershire, Herefordshire and Gloucestershire.">
+<meta name="description" content="Professional pest control services across Worcester, Worcestershire, Herefordshire and Gloucestershire. Fast response for rats, mice, wasps and more.">
 
 <style>
 :root{
@@ -19,10 +19,14 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
+    font-family:Segoe UI, Arial, sans-serif;
     background:#000;
     color:#fff;
-    font-family:Segoe UI, Arial, sans-serif;
     line-height:1.6;
 }
 
@@ -62,16 +66,20 @@ nav a{
     font-weight:bold;
 }
 
+nav a:hover{
+    color:var(--gold);
+}
+
 .hero{
     min-height:75vh;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     text-align:center;
     padding:40px 20px;
 
     background:
-    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
     url('hero.jpg');
 
     background-size:cover;
@@ -97,9 +105,9 @@ nav a{
     display:inline-block;
     background:var(--gold);
     color:#000;
-    text-decoration:none;
     padding:14px 28px;
     border-radius:8px;
+    text-decoration:none;
     font-weight:bold;
     margin:5px;
 }
@@ -111,8 +119,8 @@ nav a{
 }
 
 .section h2{
-    color:var(--gold);
     text-align:center;
+    color:var(--gold);
     margin-bottom:40px;
 }
 
@@ -125,8 +133,8 @@ nav a{
 .card{
     background:#111;
     border:1px solid var(--gold);
-    padding:25px;
     border-radius:12px;
+    padding:25px;
 }
 
 .card h3{
@@ -161,14 +169,18 @@ textarea{
 
 button{
     width:100%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
     background:var(--gold);
     color:#000;
-    border:none;
-    padding:15px;
-    border-radius:8px;
-    cursor:pointer;
     font-weight:bold;
     font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
 }
 
 footer{
@@ -179,26 +191,28 @@ footer{
 
 .callbtn{
     position:fixed;
-    left:20px;
     bottom:20px;
+    left:20px;
     background:var(--gold);
     color:#000;
     text-decoration:none;
     padding:15px 20px;
     border-radius:40px;
     font-weight:bold;
+    z-index:9999;
 }
 
 .whatsapp{
     position:fixed;
-    right:20px;
     bottom:20px;
+    right:20px;
     background:#25D366;
     color:#fff;
     text-decoration:none;
     padding:15px 20px;
     border-radius:40px;
     font-weight:bold;
+    z-index:9999;
 }
 
 @media(max-width:768px){
@@ -211,6 +225,12 @@ nav a{
     display:block;
     margin:10px 0;
 }
+
+.callbtn,
+.whatsapp{
+    padding:12px 15px;
+    font-size:14px;
+}
 }
 </style>
 </head>
@@ -222,6 +242,7 @@ nav a{
 <img src="logo.png" alt="Hanley Pest Control" class="logo">
 
 <div class="top-contact">
+
 <p>
 📞 tel:0749110708107491 107081</a>
 </p>
@@ -231,13 +252,15 @@ nav a{
 info@hanleypestcontrol.co.uk
 </a>
 </p>
+
 </div>
 
 </header>
 
 <nav>
-<a href="#services">ServicesAreas Covered</a>
-<a hreftContact</a>
+<a rvicesServices</a>
+<a hrefreas Covered</a>
+#contactContact</a>
 </nav>
 
 <section class="hero">
@@ -247,8 +270,7 @@ info@hanleypestcontrol.co.uk
 <h1>Professional Pest Control Services</h1>
 
 <p>
-Serving Worcester, Worcestershire, Herefordshire and Gloucestershire.
-Fast, reliable and professional pest control solutions.
+Serving Worcester, Worcestershire, Herefordshire and Gloucestershire with fast, reliable pest control solutions.
 </p>
 
 tel:07491107081
@@ -271,7 +293,7 @@ Free Quote
 
 <div class="card">
 <h3>Rat Control</h3>
-<p>Professional rat control and prevention.</p>
+<p>Professional rat control and prevention services.</p>
 </div>
 
 <div class="card">
@@ -281,7 +303,7 @@ Free Quote
 
 <div class="card">
 <h3>Wasp Nest Removal</h3>
-<p>Safe removal of wasp nests.</p>
+<p>Safe treatment and removal of wasp nests.</p>
 </div>
 
 <div class="card">
@@ -291,26 +313,4 @@ Free Quote
 
 <div class="card">
 <h3>Bed Bug Control</h3>
-<p>Effective bed bug treatments.</p>
-</div>
-
-<div class="card">
-<h3>Commercial Pest Control</h3>
-<p>Pest management for businesses.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="areas" class="section">
-
-<h2>Areas Covered</h2>
-
-<div class="grid">
-
-<div class="card">Worcester</div>
-<div class="card">Malvern</div>
-<div class="card">Droitwich Spa</div>
-<div class="card">Hereford</div>
-<div class="card">Cheltenham</
+<p>Effective
