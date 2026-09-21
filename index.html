@@ -185,26 +185,40 @@ nav a:hover{
     text-decoration:none;
 }
 
-form{
-    max-width:700px;
-    margin:auto;
-}
+<form action="https://formspree.io/f/mbglojvz" method="POST">
 
-input,
-textarea{
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-}
+    <input type="hidden"
+           name="_subject"
+           value="New enquiry from Hanley Pest Control website">
 
-button{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:8px;
+    <input type="hidden"
+           name="_next"
+           value="https://hanleypestcontrol.co.uk/thankyou.html">
+
+    <input type="text"
+           name="name"
+           placeholder="Your Name"
+           required>
+
+    <input type="tel"
+           name="phone"
+           placeholder="Phone Number"
+           required>
+
+    <input type="email"
+           name="email"
+           placeholder="Email Address">
+
+    <textarea name="message"
+              rows="6"
+              placeholder="Tell us about your pest problem"
+              required></textarea>
+
+    <button type="submit">
+        Send Enquiry
+    </button>
+
+</form>
     background:var(--gold);
     color:#000;
     font-weight:bold;
