@@ -371,22 +371,41 @@
 
     </div>
 
-    https://formspree.io/f/mbglojvz
+    <form action="https://formspree.io/f/mbglojvz" method="POST">
 
-        <input
-            type="hidden"
-            name="_subject"
-            value="New enquiry from Hanley Pest Control website">
+    <input
+        type="hidden"
+        name="_subject"
+        value="New enquiry from Hanley Pest Control website">
 
-        <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required>
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required>
 
-        <input
-            type="tel"
-            name="phone"
+    <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+        required>
+
+    <input
+        type="email"
+        name="email"
+        placeholder="Email Address">
+
+    <textarea
+        name="message"
+        rows="6"
+        placeholder="Tell us about your pest problem"
+        required></textarea>
+
+    <button type="submit">
+        Send Enquiry
+    </button>
+
+</form>
             placeholder="Phone Number"
             required>
 
