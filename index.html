@@ -379,7 +379,62 @@
 
 
 </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Floating Button</title>
 
+<style>
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 65px;
+    height: 65px;
+    background: #25D366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(37,211,102,0.5);
+}
+
+.whatsapp-icon {
+    width: 38px;
+    height: 38px;
+}
+</style>
+</head>
+<body>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/447123456789"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+
+    <svg class="whatsapp-icon" viewBox="0 0 32 32" fill="none">
+        <path fill="#fff" d="M19.11 17.2c-.25-.13-1.47-.73-1.7-.82-.23-.08-.4-.13-.56.13-.17.25-.65.82-.79.99-.15.17-.29.19-.54.06-.25-.13-1.05-.39-1.99-1.25-.74-.66-1.23-1.47-1.37-1.72-.15-.25-.02-.39.11-.52.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.36-.77-1.87-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.68.31-.23.25-.88.86-.88 2.1 0 1.24.91 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.78.6.26 1.07.42 1.43.54.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29z"/>
+        <path fill="#fff" d="M16.01 3C8.83 3 3 8.73 3 15.8c0 2.26.6 4.47 1.75 6.42L3 29l6.99-1.82a13.1 13.1 0 0 0 6.02 1.53h.01c7.18 0 13-5.73 13-12.8C29.02 8.73 23.19 3 16.01 3zm0 23.3c-1.89 0-3.73-.5-5.34-1.45l-.38-.23-4.15 1.08 1.11-4.03-.25-.41a10.3 10.3 0 0 1-1.57-5.47c0-5.68 4.74-10.3 10.58-10.3s10.58 4.62 10.58 10.3S21.84 26.3 16.01 26.3z"/>
+    </svg>
+
+</a>
+
+</body>
+</html>
+``
 </style>
 </body>
 </html>
