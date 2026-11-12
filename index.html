@@ -4,360 +4,417 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
-Pest Control Worcestershire, Herefordshire & Gloucestershire | Hanley Pest Control
-</title>
- 
-<meta name="description"
-content="Professional pest control services across Worcestershire, Herefordshire and Gloucestershire. Rat control, mouse control, wasp nest removal, flea treatments, bird management and commercial pest control. Fast response and fully insured.">
-
-    <meta name="description" content="Professional pest control services across Worcester, Worcestershire, Herefordshire and Gloucestershire. Fast response for rats, mice, wasps, fleas and bed bugs.">
+    <title>Pest Control Worcestershire, Herefordshire & Gloucestershire | Hanley Pest Control</title>
+    <meta name="description" content="Professional pest control services across Worcestershire, Herefordshire and Gloucestershire. Rat control, mouse control, wasp nest removal, flea treatments, bird management and commercial pest control. Fast response and fully insured.">
     <meta name="keywords" content="Pest Control Worcester, Rat Control Worcester, Mouse Control Worcester, Wasp Nest Removal Worcester">
     <meta name="robots" content="index,follow">
 
     <style>
-        :root{
-            --gold:#d4af37;
+        :root {
+            --gold: #d4af37;
+            --gold-hover: #e5c354;
+            --dark-bg: #0a0a0a;
+            --card-bg: #141414;
+            --border-color: #262626;
         }
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        html{
-            scroll-behavior:smooth;
+        html {
+            scroll-behavior: smooth;
         }
 
-        body{
-            font-family:Segoe UI, Arial, sans-serif;
-            background:#000;
-            color:#fff;
-            line-height:1.6;
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--dark-bg);
+            color: #fff;
+            line-height: 1.6;
         }
 
-        header{
-            padding:20px;
-            text-align:center;
-            border-bottom:1px solid #222;
+        /* Header */
+        header {
+            padding: 25px 20px;
+            text-align: center;
+            background: #000;
+            border-bottom: 1px solid var(--border-color);
         }
 
-        .logo{
-            display:block;
-            width:500px;
-            max-width:100%;
-            height:auto;
-            margin:0 auto 15px;
+        .logo {
+            display: block;
+            width: 420px;
+            max-width: 90%;
+            height: auto;
+            margin: 0 auto 15px;
         }
 
-        .top-contact{
-            text-align:center;
+        .top-contact {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            font-size: 1.05rem;
         }
 
-        .top-contact a{
-            color:var(--gold);
-            text-decoration:none;
+        .top-contact a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        nav{
-            text-align:center;
-            padding:20px;
-            background:#111;
+        .top-contact a:hover {
+            text-decoration: underline;
         }
 
-        nav a{
-            color:#fff;
-            text-decoration:none;
-            margin:0 15px;
-            font-weight:bold;
+        /* Navigation */
+        nav {
+            text-align: center;
+            padding: 15px 20px;
+            background: #111;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        nav a:hover{
-            color:var(--gold);
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s ease;
         }
 
-        <section class="hero">
+        nav a:hover {
+            color: var(--gold);
+        }
 
-    <div class="hero-content">
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.88)), #161616;
+            padding: 70px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
 
-        <h1>
-            Pest Control Across Worcestershire, Herefordshire & Gloucestershire
-        </h1>
+        .hero-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
 
-        <p>
-            Hanley Pest Control provides fast, reliable and discreet pest
-            control services for domestic and commercial customers throughout
-            Worcestershire, Herefordshire and Gloucestershire.
-        </p>
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            line-height: 1.25;
+        }
 
-        <p>
-            Specialists in rat control, mouse control, wasp nest removal,
-            flea treatments, bed bug eradication and bird management.
-        </p>
+        .hero p {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            margin-bottom: 15px;
+        }
 
-        #contactGet A Free Quote</a>
+        .btn-gold {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 14px 30px;
+            background: var(--gold);
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 1.05rem;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
 
-    </div>
+        .btn-gold:hover {
+            background: var(--gold-hover);
+            transform: translateY(-2px);
+        }
 
-</section>
+        /* General Sections */
+        .section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
 
-<section class="section">
+        .section h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 35px;
+        }
 
-    <h2>Professional Pest Control You Can Trust</h2>
+        /* About + Working Photo Split */
+        .about-split {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 35px;
+            align-items: center;
+        }
 
-    <p>
-        At Hanley Pest Control we provide effective pest management solutions
-        for homes, businesses, rental properties, retail premises and rural
-        properties throughout Worcestershire, Herefordshire and Gloucestershire.
-    </p>
+        .about-text p {
+            margin-bottom: 15px;
+            color: #ddd;
+        }
 
-    <p>
-        Whether you're dealing with rats in a loft, mice in a property,
-        a wasp nest in the summer months, or ongoing commercial pest issues,
-        we provide safe, professional treatments tailored to your situation.
-    </p>
+        .about-photo img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid var(--gold);
+            display: block;
+            background: #1a1a1a;
+        }
 
-    <p>
-        We pride ourselves on delivering a rapid response, discreet service
-        and honest advice to help prevent future infestations.
-    </p>
+        /* Cards Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 20px;
+        }
 
-</section>
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
 
-<section id="services" class="section">
+        .card:hover {
+            border-color: var(--gold);
+            transform: translateY(-3px);
+        }
 
-    <h2>Our Pest Control Services</h2>
+        .card h3 {
+            color: var(--gold);
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+        }
 
-    <div class="grid">
+        .card p {
+            color: #ccc;
+            font-size: 0.98rem;
+        }
 
-       <div class="card">
-    <h3>Rat Control</h3>
+        .card-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
 
-    <p>
-        Professional rat treatment and prevention services.
-    </p>
+        .card-link:hover {
+            text-decoration: underline;
+        }
 
-    rat-control-worcester.html
-        Learn More
-    </a>
-</div>
-            </p>
-        </div>
+        /* Working Photos Gallery */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
 
-        <div class="card">
-            <h3>Mouse Control</h3>
-            <p>
-                Effective treatment for mouse infestations with a focus on
-                long-term prevention and rapid removal.
-            </p>
-        </div>
+        .photo-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
 
-        <div class="card">
-            <h3>Wasp Nest Removal</h3>
-            <p>
-                Fast and safe wasp nest treatment throughout Worcestershire,
-                Herefordshire and Gloucestershire.
-            </p>
-        </div>
+        .photo-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            background: #1a1a1a;
+        }
 
-        <div class="card">
-            <h3>Bird Management</h3>
-            <p>
-                Bird proofing and management solutions for commercial and
-                domestic properties.
-            </p>
-        </div>
+        .photo-card p {
+            padding: 12px 15px;
+            font-size: 0.9rem;
+            color: #ccc;
+            text-align: center;
+        }
 
-        <div class="card">
-            <h3>Flea Treatments</h3>
-            <p>
-                Targeted flea treatments for homes, rental properties and
-                commercial premises.
-            </p>
-        </div>
+        /* FAQ Styling */
+        .faq-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
 
-        <div class="card">
-            <h3>Bed Bug Control</h3>
-            <p>
-                Professional bed bug eradication using effective treatment
-                methods and follow-up recommendations.
-            </p>
-        </div>
+        .faq-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
 
-        <div class="card">
-            <h3>Commercial Pest Control</h3>
-            <p>
-                Tailored pest management contracts and reactive treatments
-                for businesses across the region.
-            </p>
-        </div>
+        /* Areas List */
+        .areas-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            color: #ddd;
+            font-size: 1.05rem;
+        }
 
-    </div>
+        /* Contact Form */
+        .contact-wrapper {
+            max-width: 650px;
+            margin: 0 auto;
+        }
 
-</section>
+        .contact-details {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
 
-<section id="areas" class="section">
+        .contact-details p {
+            margin-bottom: 8px;
+        }
 
-    <h2>Areas We Cover</h2>
+        .contact-details a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    <p style="text-align:center; max-width:900px; margin:auto;">
-        Hanley Pest Control proudly serves customers across Worcester,
-        Malvern, Droitwich Spa, Evesham, Pershore, Kidderminster,
-        Redditch, Bromsgrove, Hereford, Ledbury, Ross-on-Wye,
-        Gloucester, Cheltenham, Tewkesbury, Stroud and surrounding areas.
-    </p>
-
-</section>
-
-<section class="section">
-
-    <h2>Why Choose Hanley Pest Control?</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Fast Response</h3>
-            <p>Prompt attendance to minimise disruption and risk.</p>
-        </div>
-
-        <div class="card">
-            <h3>Fully Insured</h3>
-            <p>Professional pest control service with full insurance cover.</p>
-        </div>
-
-        <div class="card">
-            <h3>Discreet Service</h3>
-            <p>Unmarked approach available where discretion is important.</p>
-        </div>
-
-        <div class="card">
-            <h3>Domestic & Commercial</h3>
-            <p>
-                Solutions for homeowners, landlords, businesses and
-                commercial premises.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section">
-
-    <h2>Frequently Asked Questions</h2>
-
-    <div class="card">
-
-        <h3>How much does pest control cost?</h3>
-
-        <p>
-            Costs vary depending on the pest species, infestation size
-            and treatment required. Contact us for a free quotation.
-        </p>
-
-        <br>
-
-        <h3>How quickly can you attend?</h3>
-
-        <p>
-            We aim to provide a fast response across Worcestershire,
-            Herefordshire and Gloucestershire.
-        </p>
-
-        <br>
-
-        <h3>Do you provide commercial pest control?</h3>
-
-        <p>
-            Yes. We provide pest control solutions for offices,
-            shops, restaurants, warehouses and other commercial premises.
-        </p>
-
-        <br>
-
-        <h3>What pests do you treat?</h3>
-
-        <p>
-            We deal with rats, mice, wasps, fleas, bed bugs,
-            birds and a wide range of common pest problems.
-        </p>
-
-    </div>
-
-</section>
         input,
-        textarea{
-            width:100%;
-            padding:14px;
-            margin-bottom:15px;
-            border:none;
-            border-radius:6px;
+        textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            background: #181818;
+            color: #fff;
+            border: 1px solid #333;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
         }
 
-        button{
-            width:100%;
-            padding:15px;
-            border:none;
-            border-radius:6px;
-            background:var(--gold);
-            color:#000;
-            font-weight:bold;
-            cursor:pointer;
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--gold);
         }
 
-        footer{
-            text-align:center;
-            padding:30px;
-            border-top:1px solid #222;
+        button[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+            background: var(--gold);
+            color: #000;
+            font-size: 1.05rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s ease;
         }
 
-        .callbtn{
-            position:fixed;
-            left:20px;
-            bottom:20px;
-            background:var(--gold);
-            color:#000;
-            text-decoration:none;
-            padding:15px 20px;
-            border-radius:40px;
-            font-weight:bold;
-            z-index:999;
+        button[type="submit"]:hover {
+            background: var(--gold-hover);
         }
 
-        .whatsapp{
-            position:fixed;
-            right:20px;
-            bottom:20px;
-            background:#25D366;
-            color:#fff;
-            text-decoration:none;
-            padding:15px 20px;
-            border-radius:40px;
-            font-weight:bold;
-            z-index:999;
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 35px 20px 90px;
+            background: #000;
+            color: #888;
+            font-size: 0.9rem;
         }
 
-        @media(max-width:768px){
-            .hero h1{
-                font-size:2rem;
+        /* Floating Call & WhatsApp Buttons */
+        .call-float {
+            position: fixed;
+            bottom: 22px;
+            left: 22px;
+            background: var(--gold);
+            color: #000;
+            text-decoration: none;
+            padding: 14px 22px;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            z-index: 9999;
+            transition: transform 0.2s ease;
+        }
+
+        .call-float:hover {
+            transform: scale(1.05);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: #FFF;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+        }
+
+        .whatsapp-icon {
+            width: 34px;
+            height: 34px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.85rem;
             }
 
-            nav a{
-                display:block;
-                margin:10px 0;
+            .about-split {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 0.85rem;
             }
         }
     </style>
 
     <script type="application/ld+json">
     {
-      "@context":"https://schema.org",
-      "@type":"LocalBusiness",
-      "name":"Hanley Pest Control",
-      "telephone":"07491107081",
-      "email":"info@hanleypestcontrol.co.uk",
-      "url":"https://hanleypestcontrol.co.uk"
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Hanley Pest Control",
+      "telephone": "07491107081",
+      "email": "info@hanleypestcontrol.co.uk",
+      "url": "https://hanleypestcontrol.co.uk"
     }
     </script>
 </head>
@@ -368,217 +425,217 @@ content="Professional pest control services across Worcestershire, Herefordshire
     <img src="logo.png" alt="Hanley Pest Control" class="logo">
 
     <div class="top-contact">
-         📞
-            <a href="tel:07491107081">07491 107081  </p>
-        <p>
-            ✉️
-            <a href="mailto:info@hanleypestcontrol.co.uk">
-                info@hanleypestcontrol.co.uk
-            </a>
-        </p>
+        <p>📞 <a href="tel:07491107081">07491 107081</a></p>
+        <p>✉️ <a href="mailto:info@hanleypestcontrol.co.uk">info@hanleypestcontrol.co.uk</a></p>
     </div>
 </header>
 
 <nav>
-   <nav>
+    <a href="#about">About</a>
     <a href="#services">Services</a>
-<a href="#contact">Contact</a>
+    <a href="#gallery">Our Work</a>
+    <a href="#areas">Areas</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<div class="hero-content">
-    <p>
-        Fast, reliable and discreet pest control services across
-        Worcestershire, Herefordshire and Gloucestershire.
-    </p>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Pest Control Across Worcestershire, Herefordshire &amp; Gloucestershire</h1>
+        <p>
+            Hanley Pest Control provides fast, reliable and discreet pest control services for domestic and commercial customers throughout Worcestershire, Herefordshire and Gloucestershire.
+        </p>
+        <p>
+            Specialists in rat control, mouse control, wasp nest removal, flea treatments, bed bug eradication and bird management.
+        </p>
+        <a href="#contact" class="btn-gold">Get A Free Quote</a>
+    </div>
+</section>
 
-    <p>
-        Domestic & Commercial Pest Management Solutions
-    </p>
-</div>
+<section id="about" class="section">
+    <h2>Professional Pest Control You Can Trust</h2>
+
+    <div class="about-split">
+        <div class="about-text">
+            <p>
+                At Hanley Pest Control we provide effective pest management solutions for homes, businesses, rental properties, retail premises and rural properties throughout Worcestershire, Herefordshire and Gloucestershire.
+            </p>
+            <p>
+                Whether you're dealing with rats in a loft, mice in a property, a wasp nest in the summer months, or ongoing commercial pest issues, we provide safe, professional treatments tailored to your situation.
+            </p>
+            <p>
+                We pride ourselves on delivering a rapid response, discreet service and honest advice to help prevent future infestations.
+            </p>
+        </div>
+
+        <!-- DROP YOUR MAIN WORKING PHOTO HERE -->
+        <div class="about-photo">
+            <img src="working-1.jpg" alt="Hanley Pest Control technician at work">
+        </div>
+    </div>
 </section>
 
 <section id="services" class="section">
-    <h2>Our Services</h2>
+    <h2>Our Pest Control Services</h2>
 
     <div class="grid">
         <div class="card">
             <h3>Rat Control</h3>
-            <p>Professional rat treatment and prevention.</p>
+            <p>Professional rat treatment, proofing and long-term prevention services for homes and businesses.</p>
+            <a href="rat-control-worcester.html" class="card-link">Learn More &rarr;</a>
         </div>
 
         <div class="card">
             <h3>Mouse Control</h3>
-            <p>Fast and effective mouse treatments.</p>
+            <p>Effective treatment for mouse infestations with a focus on long-term prevention and rapid removal.</p>
         </div>
 
         <div class="card">
             <h3>Wasp Nest Removal</h3>
-            <p>Safe removal of wasp nests.</p>
+            <p>Fast and safe wasp nest treatment throughout Worcestershire, Herefordshire and Gloucestershire.</p>
         </div>
 
         <div class="card">
             <h3>Bird Management</h3>
-            <p>Professional bird proofing and management solutions.</p>
+            <p>Bird proofing, netting, spikes and management solutions for commercial and domestic properties.</p>
         </div>
 
         <div class="card">
             <h3>Flea Treatments</h3>
-            <p>Domestic and commercial flea control.</p>
+            <p>Targeted flea treatments for homes, rental properties and commercial premises.</p>
         </div>
 
         <div class="card">
             <h3>Bed Bug Control</h3>
-            <p>Professional bed bug eradication.</p>
+            <p>Professional bed bug eradication using effective treatment methods and follow-up recommendations.</p>
         </div>
 
         <div class="card">
             <h3>Commercial Pest Control</h3>
-            <p>Tailored pest management solutions.</p>
+            <p>Tailored pest management contracts and reactive treatments for businesses across the region.</p>
+        </div>
+    </div>
+</section>
+
+<!-- DROP YOUR EXTRA WORKING PHOTOS HERE -->
+<section id="gallery" class="section">
+    <h2>Recent Work &amp; In Action</h2>
+
+    <div class="photo-grid">
+        <div class="photo-card">
+            <img src="working-2.jpg" alt="Pest control inspection and treatment">
+            <p>Thorough property inspections &amp; proofing</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="working-3.jpg" alt="Wasp nest removal and treatment">
+            <p>Safe &amp; effective wasp nest treatments</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="working-4.jpg" alt="Commercial and rural pest management">
+            <p>Domestic, rural &amp; commercial pest solutions</p>
         </div>
     </div>
 </section>
 
 <section id="areas" class="section">
-    <h2>Areas Covered</h2>
+    <h2>Areas We Cover</h2>
 
-    <p style="text-align:center;">
-        Worcester, Malvern, Droitwich Spa, Pershore,
-        Evesham, Hereford, Gloucester, Cheltenham,
-        Tewkesbury and surrounding areas.
-    </p>
+    <div class="areas-box">
+        Hanley Pest Control proudly serves customers across <strong>Worcester, Malvern, Droitwich Spa, Evesham, Pershore, Kidderminster, Redditch, Bromsgrove, Hereford, Ledbury, Ross-on-Wye, Gloucester, Cheltenham, Tewkesbury, Stroud</strong> and surrounding areas.
+    </div>
 </section>
 
-<section id="contact" class="section">
+<section class="section">
+    <h2>Why Choose Hanley Pest Control?</h2>
 
+    <div class="grid">
+        <div class="card">
+            <h3>Fast Response</h3>
+            <p>Prompt attendance to minimise disruption and risk to your property.</p>
+        </div>
+
+        <div class="card">
+            <h3>Fully Insured</h3>
+            <p>Professional pest control service with full public liability insurance cover.</p>
+        </div>
+
+        <div class="card">
+            <h3>Discreet Service</h3>
+            <p>Unmarked approach available where discretion is important.</p>
+        </div>
+
+        <div class="card">
+            <h3>Domestic &amp; Commercial</h3>
+            <p>Tailored solutions for homeowners, landlords, businesses and commercial premises.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="card">
+        <div class="faq-item">
+            <h3>How much does pest control cost?</h3>
+            <p>Costs vary depending on the pest species, infestation size and treatment required. Contact us for a free, no-obligation quotation.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How quickly can you attend?</h3>
+            <p>We aim to provide a fast, same-day or next-day response across Worcestershire, Herefordshire and Gloucestershire.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Do you provide commercial pest control?</h3>
+            <p>Yes. We provide pest control solutions and ongoing contracts for offices, shops, restaurants, warehouses and other commercial premises.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What pests do you treat?</h3>
+            <p>We deal with rats, mice, wasps, fleas, bed bugs, birds and a wide range of common pest problems.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section" style="border-bottom: none;">
     <h2>Contact Us</h2>
 
-    <div class="contact-details">
-        <p>
-          📞
-            <a href="tel:07491107081">07491 107081  </p>
-        </p>
+    <div class="contact-wrapper">
+        <div class="contact-details">
+            <p>📞 <a href="tel:07491107081">07491 107081</a></p>
+            <p>✉️ <a href="mailto:info@hanleypestcontrol.co.uk">info@hanleypestcontrol.co.uk</a></p>
+        </div>
 
-        <p>
-            ✉️
-            <a href="mailto:info@hanleypestcontrol.co.uk">
-                info@hanleypestcontrol.co.uk
-            </a>
-        </p>
+        <form action="https://formspree.io/f/mbglojvz" method="POST">
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_subject" value="New Hanley Pest Control Enquiry">
+            <input type="hidden" name="_next" value="https://hanleypestcontrol.co.uk/thankyou.html">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email Address">
+            <textarea name="message" rows="5" placeholder="Tell us about your pest problem and your postcode/area" required></textarea>
+
+            <button type="submit">Send Enquiry</button>
+        </form>
     </div>
-
-    <form action="https://formspree.io/f/mbglojvz" method="POST">
-
-    <input
-        type="text"
-        name="_gotcha"
-        style="display:none">
-
-    <input
-        type="hidden"
-        name="_subject"
-        value="New Hanley Pest Control Enquiry">
-
-    <input
-        type="hidden"
-        name="_next"
-        value="https://hanleypestcontrol.co.uk/thankyou.html">
-
-    <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required>
-
-    <input
-        type="tel"
-        name="phone"
-        placeholder="Phone Number"
-        required>
-
-    <input
-        type="email"
-        name="email"
-        placeholder="Email Address">
-
-    <textarea
-        name="message"
-        rows="6"
-        placeholder="Tell us about your pest problem"
-        required></textarea>
-
-    <button type="submit">
-        Send Enquiry
-    </button>
-
-
-<input
-    type="hidden"
-    name="_next"
-    value="https://hanleypestcontrol.co.uk/thankyou.html">
-    </form>
-
 </section>
+
+<footer>
     <p>&copy; 2026 Hanley Pest Control. All Rights Reserved.</p>
 </footer>
 
+<!-- Floating Call Button -->
+<a href="tel:07491107081" class="call-float">📞 Call Now</a>
 
-</a>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WhatsApp Floating Button</title>
-
-<style>
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 65px;
-    height: 65px;
-    background: #25D366;
-    color: #FFF;
-    border-radius: 50%;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 18px rgba(37,211,102,0.5);
-}
-
-.whatsapp-icon {
-    width: 38px;
-    height: 38px;
-}
-</style>
-</head>
-<body>
-
-<!-- WhatsApp Button -->
-<a href="https://wa.me/447491 107081"
-   class="whatsapp-float"
-   target="_blank"
-   aria-label="Chat on WhatsApp">
-
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/447491107081" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
     <svg class="whatsapp-icon" viewBox="0 0 32 32" fill="none">
         <path fill="#fff" d="M19.11 17.2c-.25-.13-1.47-.73-1.7-.82-.23-.08-.4-.13-.56.13-.17.25-.65.82-.79.99-.15.17-.29.19-.54.06-.25-.13-1.05-.39-1.99-1.25-.74-.66-1.23-1.47-1.37-1.72-.15-.25-.02-.39.11-.52.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.36-.77-1.87-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.68.31-.23.25-.88.86-.88 2.1 0 1.24.91 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.78.6.26 1.07.42 1.43.54.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29z"/>
         <path fill="#fff" d="M16.01 3C8.83 3 3 8.73 3 15.8c0 2.26.6 4.47 1.75 6.42L3 29l6.99-1.82a13.1 13.1 0 0 0 6.02 1.53h.01c7.18 0 13-5.73 13-12.8C29.02 8.73 23.19 3 16.01 3zm0 23.3c-1.89 0-3.73-.5-5.34-1.45l-.38-.23-4.15 1.08 1.11-4.03-.25-.41a10.3 10.3 0 0 1-1.57-5.47c0-5.68 4.74-10.3 10.58-10.3s10.58 4.62 10.58 10.3S21.84 26.3 16.01 26.3z"/>
     </svg>
-
 </a>
 
-</body>
-</html>
-``
-</style>
 </body>
 </html>
