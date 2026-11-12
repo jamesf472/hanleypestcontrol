@@ -35,65 +35,78 @@
             line-height: 1.6;
         }
 
-        /* Header */
-        header {
-            padding: 25px 20px;
-            text-align: center;
-            background: #000;
-            border-bottom: 1px solid var(--border-color);
-        }
+        /* Compact Header & Navigation Bar */
+.site-header {
+    background: #000;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
-        .logo {
-            display: block;
-            width: 420px;
-            max-width: 90%;
-            height: auto;
-            margin: 0 auto 15px;
-        }
+.header-inner {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
-        .top-contact {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-            font-size: 1.05rem;
-        }
+.logo {
+    width: 210px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
-        .top-contact a {
-            color: var(--gold);
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-        .top-contact a:hover {
-            text-decoration: underline;
-        }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
 
-        /* Navigation */
-        nav {
-            text-align: center;
-            padding: 15px 20px;
-            background: #111;
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+nav a:hover {
+    color: var(--gold);
+}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 18px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            transition: color 0.2s ease;
-        }
+.header-cta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-        nav a:hover {
-            color: var(--gold);
-        }
+.header-phone {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05rem;
+    white-space: nowrap;
+}
+
+.header-phone:hover {
+    text-decoration: underline;
+}
+
+/* Tighter Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.88)), #161616;
+    padding: 45px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
 
         /* Hero Section */
         .hero {
@@ -475,22 +488,25 @@
 
 <body>
 
-<header>
-    <img src="logo.png" alt="Hanley Pest Control" class="logo">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="#">
+            <img src="logo.png" alt="Hanley Pest Control" class="logo">
+        </a>
 
-    <div class="top-contact">
-        <p>📞 <a href="tel:07491107081">07491 107081</a></p>
-        <p>✉️ <a href="mailto:info@hanleypestcontrol.co.uk">info@hanleypestcontrol.co.uk</a></p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Our Work</a>
+            <a href="#areas">Areas</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-cta">
+            <a href="tel:07491107081" class="header-phone">📞 07491 107081</a>
+        </div>
     </div>
 </header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Our Work</a>
-    <a href="#areas">Areas</a>
-    <a href="#contact">Contact</a>
-</nav>
 
 <section class="hero">
     <div class="hero-content">
